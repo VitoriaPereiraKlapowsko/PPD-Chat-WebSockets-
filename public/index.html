@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Chat</title>
+    <title>Sistema de Salas de Chat</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
     <div class="page" id="loginPage">
-        <h1>Qual seu nome?</h1>
-        <input type="text" id="loginNameInput" />
+        <h1>Qual o seu nome?</h1>
+        <input type="text" id="loginNameInput" placeholder="Digite e pressione Enter" />
     </div>
 
     <div class="page" id="chatPage">
+        <div class="room-selection">
+            <input type="text" id="roomNameInput" placeholder="Digite o nome da sala" />
+            <button id="roomSelectBtn">Entrar na Sala</button>
+            <button id="exitRoomBtn">Sair do Chat</button> 
+        </div>
+        <div id="roomDisplay" class="room-info">Sala:</div>
         <div class="chatArea">
             <ul class="chatList"></ul>
             <ul class="userList"></ul>
         </div>
         <div class="chatInput">
-            <input type="text" id="chatTextInput" placeholder="Digite uma mensagem (e aperte ENTER)" />
+            <input type="text" id="chatTextInput" placeholder="Digite uma mensagem e pressione Enter" />
         </div>
     </div>
 
